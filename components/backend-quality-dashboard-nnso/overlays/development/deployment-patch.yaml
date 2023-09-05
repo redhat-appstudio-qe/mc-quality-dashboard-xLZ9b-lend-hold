@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-nnso
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-gygl-tenant/mc-quality-dashboard/backend-quality-dashboard-nnso@sha256:f4b9848d0dffe4001c08db26ccd0fff45036a57b052a9ef0bea4b3ea34ec385d
+        name: container-image
+        resources: {}
+status: {}
